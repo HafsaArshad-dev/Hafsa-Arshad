@@ -92,7 +92,7 @@ export default function Skills() {
             stroke="currentColor"
             strokeWidth={strokeWidth}
             fill="transparent"
-            className="text-gray-200"
+            className="text-white/30"
           />
           <motion.circle
             cx={size / 2}
@@ -110,7 +110,7 @@ export default function Skills() {
           />
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="text-2xl font-bold text-gray-300">{percentage}%</span>
+                          <span className="text-2xl font-bold text-white">{percentage}%</span>
         </div>
       </div>
     )
@@ -129,7 +129,7 @@ export default function Skills() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             Skills & Expertise
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             A comprehensive range of technical, creative, and professional skills developed through continuous learning and hands-on experience
           </p>
         </motion.div>
@@ -149,7 +149,7 @@ export default function Skills() {
                 <div className={`w-12 h-12 bg-gradient-to-r ${category.color} rounded-xl flex items-center justify-center`}>
                   <category.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">{category.title}</h3>
+                <h3 className="text-2xl font-bold text-white">{category.title}</h3>
               </div>
 
               {/* Skills List */}
@@ -163,7 +163,7 @@ export default function Skills() {
                     className="group"
                   >
                     <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-gray-300 group-hover:text-purple-400 transition-colors duration-200">
+                      <span className="font-medium text-white group-hover:text-purple-400 transition-colors duration-200">
                         {skill.name}
                       </span>
                       <span className="text-sm font-semibold text-purple-600">
@@ -192,28 +192,28 @@ export default function Skills() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-20 text-center"
         >
-          <h3 className="text-3xl font-bold text-gray-800 mb-12">Core Competencies</h3>
+          <h3 className="text-3xl font-bold text-white mb-12">Core Competencies</h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Python */}
             <div className="text-center">
               <CircularProgress percentage={85} color="from-purple-400 to-purple-600" />
-              <h4 className="text-xl font-semibold text-gray-800 mt-4 mb-2">Python</h4>
-              <p className="text-gray-600">Advanced programming with focus on AI, automation, and problem-solving</p>
+              <h4 className="text-xl font-semibold text-white mt-4 mb-2">Python</h4>
+              <p className="text-white/80">Advanced programming with focus on AI, automation, and problem-solving</p>
             </div>
 
             {/* Generative AI */}
             <div className="text-center">
               <CircularProgress percentage={95} color="from-primary-400 to-primary-600" />
-              <h4 className="text-xl font-semibold text-gray-800 mt-4 mb-2">Generative AI</h4>
-              <p className="text-gray-600">Expert-level knowledge in AI models, agents, and emerging technologies</p>
+              <h4 className="text-xl font-semibold text-white mt-4 mb-2">Generative AI</h4>
+              <p className="text-white/80">Expert-level knowledge in AI models, agents, and emerging technologies</p>
             </div>
 
             {/* Creative Development */}
             <div className="text-center">
               <CircularProgress percentage={95} color="from-purple-500 to-primary-500" />
-              <h4 className="text-xl font-semibold text-gray-800 mt-4 mb-2">Creative Development</h4>
-              <p className="text-gray-600">Mastery in design tools, vector graphics, and creative problem-solving</p>
+              <h4 className="text-xl font-semibold text-white mt-4 mb-2">Creative Development</h4>
+              <p className="text-white/80">Mastery in design tools, vector graphics, and creative problem-solving</p>
             </div>
           </div>
         </motion.div>

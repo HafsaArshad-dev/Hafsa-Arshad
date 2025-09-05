@@ -76,7 +76,7 @@ export default function Blog() {
             </div>
             <div>
               <span className="text-sm font-medium text-purple-600">{post.category}</span>
-              <div className="flex items-center space-x-2 text-xs text-gray-500">
+              <div className="flex items-center space-x-2 text-xs text-white/70">
                 <span>{post.date}</span>
                 <span>•</span>
                 <span>{post.readTime}</span>
@@ -90,18 +90,18 @@ export default function Blog() {
           )}
         </div>
         
-        <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-purple-600 transition-colors duration-300 leading-tight">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-600 transition-colors duration-300 leading-tight">
           {post.title}
         </h3>
         
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-white/80 leading-relaxed">
           {post.excerpt}
         </p>
       </div>
 
       {/* Content */}
       <div className="p-6">
-                        <p className="text-gray-300 mb-6 leading-relaxed">
+                        <p className="text-white/90 mb-6 leading-relaxed">
           {post.summary}
         </p>
 
@@ -137,7 +137,7 @@ export default function Blog() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             Blog & Articles
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Published STEM content simplifying complex aerospace topics for younger readers and enthusiasts
           </p>
         </motion.div>
@@ -204,28 +204,28 @@ export default function Blog() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <h3 className="text-3xl font-bold text-gray-800 mb-8">Content Creation Process</h3>
+          <h3 className="text-3xl font-bold text-white mb-8">Content Creation Process</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">1</span>
               </div>
-              <h4 className="text-xl font-semibold text-gray-800 mb-2">Research & Analysis</h4>
-              <p className="text-gray-600">Deep dive into complex aerospace concepts and current research</p>
+              <h4 className="text-xl font-semibold text-white mb-2">Research & Analysis</h4>
+              <p className="text-white/80">Deep dive into complex aerospace concepts and current research</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">2</span>
               </div>
-              <h4 className="text-xl font-semibold text-gray-800 mb-2">Simplification</h4>
-              <p className="text-gray-600">Transform technical jargon into accessible, engaging content</p>
+              <h4 className="text-xl font-semibold text-white mb-2">Simplification</h4>
+              <p className="text-white/80">Transform technical jargon into accessible, engaging content</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">3</span>
               </div>
-              <h4 className="text-xl font-semibold text-gray-800 mb-2">Storytelling</h4>
-              <p className="text-gray-600">Blend science with relatable examples and engaging narratives</p>
+              <h4 className="text-xl font-semibold text-white mb-2">Storytelling</h4>
+              <p className="text-white/80">Blend science with relatable examples and engaging narratives</p>
             </div>
           </div>
         </motion.div>

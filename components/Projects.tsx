@@ -106,11 +106,11 @@ export default function Projects() {
           <span className="text-sm font-medium text-purple-600">{project.category}</span>
         </div>
         
-        <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-purple-600 transition-colors duration-300">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-600 transition-colors duration-300">
           {project.title}
         </h3>
         
-        <p className="text-gray-600 mb-4 leading-relaxed">
+        <p className="text-white/80 mb-4 leading-relaxed">
           {project.description}
         </p>
 
@@ -157,7 +157,7 @@ export default function Projects() {
           )}
           
           {(!project.link || project.link === '#') && (!project.github || project.github === '#') && (
-            <span className="text-gray-500 text-sm italic">Demo available upon request</span>
+            <span className="text-white/60 text-sm italic">Demo available upon request</span>
           )}
         </div>
       </div>
@@ -180,7 +180,7 @@ export default function Projects() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             A diverse portfolio showcasing Python development, creative design, and technical writing projects
           </p>
         </motion.div>

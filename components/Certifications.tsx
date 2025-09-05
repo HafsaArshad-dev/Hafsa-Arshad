@@ -136,7 +136,7 @@ export default function Certifications() {
           </div>
           <div className="flex-1">
             <div className="flex items-center space-x-2 mb-2">
-              <h3 className="text-xl font-bold text-gray-800">{item.title}</h3>
+              <h3 className="text-xl font-bold text-white">{item.title}</h3>
               {item.current && (
                 <span className="bg-gradient-to-r from-green-400 to-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
                   Current
@@ -149,7 +149,7 @@ export default function Certifications() {
               )}
             </div>
             <p className="text-lg font-semibold text-purple-600">{item.issuer}</p>
-            <div className="flex items-center space-x-2 text-sm text-gray-500">
+            <div className="flex items-center space-x-2 text-sm text-white/70">
               <Calendar className="w-4 h-4" />
               <span>{item.date}</span>
             </div>
@@ -157,7 +157,7 @@ export default function Certifications() {
         </div>
 
         {/* Description */}
-        <p className="text-gray-700 leading-relaxed mb-4">{item.description}</p>
+        <p className="text-white/80 leading-relaxed mb-4">{item.description}</p>
 
         {/* Category */}
         <div className="flex items-center justify-between">
@@ -196,7 +196,7 @@ export default function Certifications() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             Education & Certifications
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Continuous learning journey through formal education and specialized certifications in AI, design, and technology
           </p>
         </motion.div>
@@ -208,7 +208,7 @@ export default function Certifications() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-20"
         >
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Current Education</h3>
+          <h3 className="text-3xl font-bold text-white mb-8 text-center">Current Education</h3>
           <div className="grid lg:grid-cols-2 gap-8">
             {education.filter(item => item.current).map((item, index) => (
               <motion.div
@@ -223,12 +223,12 @@ export default function Certifications() {
                     <item.icon className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-800">{item.title}</h4>
+                    <h4 className="text-xl font-bold text-white">{item.title}</h4>
                     <p className="text-lg font-semibold text-purple-600">{item.issuer}</p>
                   </div>
                 </div>
-                <p className="text-gray-300 leading-relaxed mb-4">{item.description}</p>
-                <div className="flex items-center space-x-2 text-sm text-gray-500">
+                <p className="text-white/80 leading-relaxed mb-4">{item.description}</p>
+                <div className="flex items-center space-x-2 text-sm text-white/70">
                   <Calendar className="w-4 h-4" />
                   <span>{item.date}</span>
                 </div>
@@ -244,7 +244,7 @@ export default function Certifications() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-20"
         >
-          <h3 className="text-3xl font-bold text-gray-800 mb-12 text-center">Professional Certifications</h3>
+          <h3 className="text-3xl font-bold text-white mb-12 text-center">Professional Certifications</h3>
           <div className="relative">
             {certifications.map((cert, index) => (
               <TimelineItem 

@@ -94,7 +94,7 @@ export default function Contact() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Ready to collaborate on innovative projects? Let's discuss how we can work together to create amazing solutions.
           </p>
         </motion.div>
@@ -108,7 +108,7 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <motion.a
@@ -126,8 +126,8 @@ export default function Contact() {
                       <info.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-sm font-medium text-gray-500">{info.label}</p>
-                      <p className="text-gray-800 font-semibold group-hover:text-purple-600 transition-colors duration-300">
+                      <p className="text-sm font-medium text-white/70">{info.label}</p>
+                      <p className="text-white font-semibold group-hover:text-purple-600 transition-colors duration-300">
                         {info.value}
                       </p>
                     </div>
@@ -139,7 +139,7 @@ export default function Contact() {
             {/* Additional Info */}
             <div className="space-y-6">
               <div>
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Languages</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Languages</h4>
                 <div className="flex flex-wrap gap-2">
                   {languages.map((language, index) => (
                     <motion.span
@@ -156,7 +156,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Hobbies & Interests</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Hobbies & Interests</h4>
                 <div className="flex flex-wrap gap-2">
                   {hobbies.map((hobby, index) => (
                     <motion.span
@@ -203,11 +203,11 @@ export default function Contact() {
             id="contact-form"
           >
             <div className="bg-gray-800/70 backdrop-blur-custom rounded-2xl p-8 shadow-lg">
-                              <h3 className="text-2xl font-bold text-gray-200 mb-6">Send a Message</h3>
+                              <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                     Name *
                   </label>
                   <input
@@ -223,7 +223,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                     Email *
                   </label>
                   <input
@@ -239,7 +239,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                     Message *
                   </label>
                   <textarea
@@ -312,7 +312,7 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="text-center mt-16"
         >
-          <p className="text-gray-600">
+          <p className="text-white/80">
             I typically respond within 24 hours. For urgent matters, feel free to reach out directly via email.
           </p>
         </motion.div>

@@ -109,7 +109,7 @@ export default function Navigation() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     onClick={() => scrollToSection(item.href)}
-                    className="w-full flex items-center space-x-3 px-4 py-3 text-left text-gray-300 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 group"
+                    className="w-full flex items-center space-x-3 px-4 py-3 text-left text-white hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 group"
                   >
                     <item.icon className="w-5 h-5 group-hover:scale-110 group-hover:text-purple-400 transition-all duration-300" />
                     <span className="font-medium">{item.name}</span>

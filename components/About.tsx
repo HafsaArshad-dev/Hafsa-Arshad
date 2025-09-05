@@ -32,7 +32,7 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             About Me
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             A passionate technology enthusiast advancing through the Cloud Applied Generative AI Engineering certification program
           </p>
         </motion.div>
@@ -46,18 +46,18 @@ export default function About() {
             className="space-y-6"
           >
             <div className="space-y-4">
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-white leading-relaxed">
                 I am a passionate and driven technology enthusiast currently advancing my skills through the 
                 <span className="font-semibold text-purple-400"> Cloud Applied Generative AI Engineering</span> 
                 certification program, focusing on Generative AI, cloud computing, DevOps, and full-stack development.
               </p>
               
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-white leading-relaxed">
                 I am also exploring robotics, intelligent agents, and applications of AI in healthcare, finance, and Web3. 
                 My goal is to leverage these skills to create scalable, tech-driven solutions that solve real-world problems.
               </p>
               
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-white leading-relaxed">
                 I thrive in collaborative environments, enjoy taking on challenges, and aim to contribute to transformative 
                 projects in AI and technology.
               </p>
@@ -76,7 +76,7 @@ export default function About() {
                   <div className={`w-10 h-10 bg-gradient-to-r ${interest.color} rounded-lg flex items-center justify-center`}>
                     <interest.icon className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-medium text-gray-300 text-sm">{interest.text}</span>
+                  <span className="font-medium text-white text-sm">{interest.text}</span>
                 </motion.div>
               ))}
             </div>
@@ -132,8 +132,8 @@ export default function About() {
                 <div className="w-32 h-32 bg-gradient-to-r from-purple-400 to-primary-400 rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg">
                   <Brain className="w-16 h-16 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">AI & Innovation</h3>
-                <p className="text-gray-600 text-sm">Generative AI • Cloud Computing • Creative Tech</p>
+                <h3 className="text-xl font-semibold text-white mb-2">AI & Innovation</h3>
+                <p className="text-white/80 text-sm">Generative AI • Cloud Computing • Creative Tech</p>
               </div>
 
               {/* Connecting lines */}

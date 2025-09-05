@@ -194,7 +194,7 @@ export default function Hero() {
           variants={itemVariants}
           className="mb-16"
         >
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto leading-relaxed font-light">
             <span className="text-purple-300 font-medium">Passionate about emerging tech & innovation</span> • 
             <span className="text-primary-300 font-medium"> Creative Technologist</span> • 
             <span className="text-primary-300 font-medium"> Cloud Computing Learner</span> • 
@@ -235,7 +235,7 @@ export default function Hero() {
         {/* Enhanced Location and Contact Info */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-8 justify-center items-center text-gray-400 mb-16"
+          className="flex flex-col sm:flex-row gap-8 justify-center items-center text-white/80 mb-16"
         >
           <motion.div 
             className="flex items-center space-x-3 group cursor-pointer"
@@ -267,7 +267,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center text-gray-500 cursor-pointer group"
+            className="flex flex-col items-center text-white/60 cursor-pointer group"
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <span className="text-sm mb-3 group-hover:text-purple-400 transition-colors duration-300">
