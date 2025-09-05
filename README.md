@@ -1,8 +1,8 @@
-# 🌐 Hafsa Arshad – Portfolio Website
+#  Hafsa Arshad – Portfolio Website
 
-A modern, responsive, and animated portfolio website showcasing Hafsa Arshad's skills, projects, and achievements as a Python Developer and Generative AI Enthusiast.
+A modern, responsive, animated portfolio website showcasing Hafsa Arshad's skills, projects, and achievements as a Python Developer and Generative AI Enthusiast.
 
-## ✨ Features
+##  Features
 
 - **Modern Design**: Light purple-blue aesthetic with minimal, tech-inspired design
 - **Fully Responsive**: Optimized for all devices and screen sizes
@@ -12,7 +12,7 @@ A modern, responsive, and animated portfolio website showcasing Hafsa Arshad's s
 - **Contact Form**: Functional contact form with email integration
 - **Performance**: Optimized for fast loading and smooth performance
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **Next.js 14** - React framework with App Router
@@ -31,7 +31,7 @@ A modern, responsive, and animated portfolio website showcasing Hafsa Arshad's s
 - **MongoDB Atlas** - Cloud database
 - **Custom Domain** - hafsaarshad.dev
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 hafsa-arshad-portfolio/
@@ -57,7 +57,7 @@ hafsa-arshad-portfolio/
 └── package.json           # Dependencies
 ```
 
-## 🎨 Design System
+##  Design System
 
 ### Color Palette
 - **Primary Purple**: `#b8a5ff` (Light purple)
@@ -73,7 +73,7 @@ hafsa-arshad-portfolio/
 - **Buttons**: Gradient backgrounds with hover effects
 - **Animations**: Smooth transitions and micro-interactions
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 18+ 
@@ -109,29 +109,14 @@ hafsa-arshad-portfolio/
    yarn dev
    ```
 
-5. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📧 Contact Form Setup
-
-The contact form uses Nodemailer to send emails. To configure:
-
-1. **Gmail Setup** (recommended for development):
-   - Enable 2-factor authentication
-   - Generate an App Password
-   - Use the App Password in `EMAIL_PASS`
-
-2. **Production Email Service**:
-   - Consider using services like SendGrid, Mailgun, or AWS SES
-   - Update the transporter configuration in `api/contact/route.ts`
-
-## 🚀 Deployment
+##  Deployment
 
 ### Frontend (Vercel)
 
 1. **Push to GitHub**
    ```bash
-   git add .
+   git add.
    git commit -m "Initial portfolio deployment"
    git push origin main
    ```
@@ -153,7 +138,7 @@ The contact form uses Nodemailer to send emails. To configure:
 2. **Configure DNS** to point to Vercel
 3. **Enable HTTPS** (automatic with Vercel)
 
-## 🔧 Customization
+##  Customization
 
 ### Content Updates
 
@@ -181,28 +166,28 @@ The portfolio is fully responsive with breakpoints:
 - **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
 
-## 🎯 Performance Optimization
+##  Performance Optimization
 
 - **Image Optimization**: Next.js Image component
 - **Code Splitting**: Automatic with Next.js
 - **Lazy Loading**: Intersection Observer for animations
 - **Bundle Analysis**: Built-in Next.js analytics
 
-## 🔒 Security Features
+##  Security Features
 
 - **Input Validation**: Form data sanitization
 - **Rate Limiting**: API endpoint protection
 - **Environment Variables**: Secure credential management
 - **HTTPS**: Automatic SSL certificates
 
-## 📊 Analytics & SEO
+##  Analytics & SEO
 
 - **Google Analytics**: Ready for integration
 - **Meta Tags**: OpenGraph and Twitter cards
 - **Structured Data**: Schema.org markup
 - **Sitemap**: Automatic generation
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - **Blog CMS**: Content management system
 - **Admin Panel**: Project and content management
@@ -210,7 +195,7 @@ The portfolio is fully responsive with breakpoints:
 - **Multi-language Support**: Internationalization
 - **Dark Mode**: Theme toggle functionality
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -218,26 +203,26 @@ The portfolio is fully responsive with breakpoints:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Next.js Team** - Amazing React framework
 - **Tailwind CSS** - Utility-first CSS framework
 - **Framer Motion** - Smooth animations
 - **Lucide** - Beautiful icon set
 
-## 📞 Support
+##  Support
 
 For questions or support:
-- **Email**: hamnaacw@gmail.com
+- **Email**: hafsaarshad3377@gmail.com
 - **LinkedIn**: [linkedin.com/in/hafsa-arshad-dev](https://linkedin.com/in/hafsa-arshad-dev)
 - **Portfolio**: [hafsaarshad.dev](https://hafsaarshad.dev)
 
 ---
 
-**Built with ❤️ by Hafsa Arshad**
+**Built by Hafsa Arshad**
 
 *Python Developer | Generative AI Enthusiast | Creative Technologist*
