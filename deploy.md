@@ -47,7 +47,7 @@ git push -u origin main
 In your Vercel project dashboard, go to **Settings > Environment Variables** and add:
 
 ```env
-EMAIL_USER=hamnaacw@gmail.com
+EMAIL_USER=hafsaarshad3377@gmail.com
 EMAIL_PASS=your-app-password
 ```
 
@@ -183,7 +183,7 @@ If you encounter issues:
 
 1. **Check Vercel logs** in dashboard
 2. **Review GitHub issues** for similar problems
-3. **Contact support** at hamnaacw@gmail.com
+3. **Contact support** at hafsaarshad3377@gmail.com
 4. **Check documentation** in README.md
 
 ---

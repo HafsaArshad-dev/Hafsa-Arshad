@@ -250,11 +250,11 @@ export default function Hero() {
           <motion.div 
             className="flex items-center space-x-3 group cursor-pointer"
             whileHover={{ scale: 1.05 }}
-            onClick={() => window.open('mailto:hamnaacw@gmail.com', '_blank')}
+            onClick={() => window.open('mailto:hafsaarshad3377@gmail.com', '_blank')}
           >
             <div className="w-3 h-3 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full group-hover:animate-pulse" />
             <span className="group-hover:text-primary-300 transition-colors duration-300">
-              📧 hamnaacw@gmail.com
+              📧 hafsaarshad3377@gmail.com
             </span>
           </motion.div>
         </motion.div>

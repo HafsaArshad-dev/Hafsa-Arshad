@@ -12,29 +12,6 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Guess the Number',
-      description: 'Interactive game where users guess numbers or challenge the computer. Features include user input validation, computer AI opponent, and score tracking.',
-      category: 'Python Development',
-      icon: Code,
-      color: 'from-purple-400 to-purple-600',
-      technologies: ['Python', 'OOP', 'Algorithms', 'Game Logic'],
-      link: '#',
-      github: '#',
-      image: '/projects/guess-number.jpg',
-      featured: true
-    },
-    {
-      title: 'Mad Libs',
-      description: 'Transforms user input into dynamic stories using string manipulation. Creates personalized narratives by filling in story templates with user-provided words.',
-      category: 'Python Development',
-      icon: Code,
-      color: 'from-purple-400 to-purple-600',
-      technologies: ['Python', 'Scripting', 'String Manipulation', 'User Input'],
-      link: '#',
-      github: '#',
-      image: '/projects/mad-libs.jpg'
-    },
-    {
       title: 'Pen Tool & Layer Management',
       description: 'Created vector artwork using pen tool and layers for structured 2D design. Demonstrates advanced Illustrator techniques and professional design workflow.',
       category: 'Adobe Illustrator',
@@ -42,7 +19,7 @@ export default function Projects() {
       color: 'from-primary-500 to-purple-500',
       technologies: ['Adobe Illustrator', 'Pen Tool', 'Layer Management', 'Vector Design'],
       link: '#',
-      image: '/projects/pen-tool.jpg'
+      image: '/images/projects/pen-tool-project.jpg'
     },
     {
       title: 'Pathfinder & Shapes',
@@ -52,7 +29,7 @@ export default function Projects() {
       color: 'from-primary-500 to-purple-500',
       technologies: ['Adobe Illustrator', 'Pathfinder', 'Shape Tools', 'Vector Graphics'],
       link: '#',
-      image: '/projects/pathfinder.jpg'
+      image: '/images/projects/pathfinder-design.jpg'
     },
     {
       title: 'STEM Articles - Students for Accessible Aerospace',
@@ -62,7 +39,7 @@ export default function Projects() {
       color: 'from-purple-500 to-primary-500',
       technologies: ['Technical Writing', 'Science Communication', 'STEM Education', 'Content Development'],
       link: 'https://aerostudents.org',
-      image: '/projects/stem-articles.jpg',
+      image: '/images/projects/stem-articles.jpg',
       featured: true
     },
     {
@@ -73,7 +50,7 @@ export default function Projects() {
       color: 'from-primary-400 to-primary-600',
       technologies: ['Canva', 'Digital Design', 'Marketing Materials', 'Visual Assets'],
       link: '#',
-      image: '/projects/canva-designs.jpg'
+      image: '/images/projects/canva-designs.jpg'
     }
   ]
 
@@ -86,10 +63,19 @@ export default function Projects() {
         project.featured ? 'ring-2 ring-purple-400' : ''
       }`}
     >
-      {/* Project Image Placeholder */}
-      <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 relative overflow-hidden">
-        <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20`} />
-        <div className="absolute inset-0 flex items-center justify-center">
+      {/* Project Image */}
+      <div className="h-48 relative overflow-hidden">
+        <img 
+          src={project.image} 
+          alt={project.title}
+          className="w-full h-full object-cover"
+          onError={(e) => {
+            // Fallback to gradient background if image fails to load
+            e.currentTarget.style.display = 'none'
+            e.currentTarget.nextElementSibling.style.display = 'flex'
+          }}
+        />
+        <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 hidden items-center justify-center`}>
           <project.icon className={`w-16 h-16 text-transparent bg-gradient-to-br ${project.color} bg-clip-text`} />
         </div>
         {project.featured && (
@@ -119,7 +105,7 @@ export default function Projects() {
           {project.technologies.map((tech: string, techIndex: number) => (
             <span
               key={techIndex}
-              className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full font-medium"
+              className="px-3 py-1 bg-purple-600/20 text-purple-300 text-sm rounded-full font-medium"
             >
               {tech}
             </span>

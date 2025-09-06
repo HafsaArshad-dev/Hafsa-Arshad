@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'hamnaacw@gmail.com', // Hafsa's email
+      to: 'hafsaarshad3377@gmail.com', // Hafsa's email
       subject: `New Portfolio Contact from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>

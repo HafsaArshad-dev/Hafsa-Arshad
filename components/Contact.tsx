@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Mail, MapPin, Linkedin, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import emailjs from 'emailjs-com'
 
 export default function Contact() {
   const [ref, inView] = useInView({
@@ -31,24 +32,24 @@ export default function Contact() {
     setFormStatus('submitting')
 
     try {
-      const apiBaseUrl = (process.env.NEXT_PUBLIC_CONTACT_API_URL || '').replace(/\/$/, '')
-      const endpoint = apiBaseUrl ? `${apiBaseUrl}/api/contact` : '/api/contact'
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      })
+      // Send email using EmailJS with your actual credentials
+      await emailjs.send(
+        "Portfolio",              // Service ID
+        "template_neczk5f",       // Template ID
+        {
+          from_name: formData.name,
+          to_name: "Hafsa",
+          message: formData.message,
+          reply_to: formData.email
+        },
+        "Jh5w3B-6grgx5axoG"      // Public Key
+      )
+
+      setFormStatus('success')
+      setFormData({ name: '', email: '', message: '' })
       
-      if (response.ok) {
-        setFormStatus('success')
-        setFormData({ name: '', email: '', message: '' })
-        
-        // Reset success message after 5 seconds
-        setTimeout(() => setFormStatus('idle'), 5000)
-      } else {
-        const errorData = await response.json()
-        throw new Error(errorData.error || 'Failed to send message')
-      }
+      // Reset success message after 5 seconds
+      setTimeout(() => setFormStatus('idle'), 5000)
     } catch (error) {
       console.error('Contact form error:', error)
       setFormStatus('error')
@@ -60,8 +61,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hamnaacw@gmail.com',
-      link: 'mailto:hamnaacw@gmail.com',
+      value: 'hafsaarshad3377@gmail.com',
+      link: 'mailto:hafsaarshad3377@gmail.com',
       color: 'from-purple-400 to-purple-600'
     },
     {
@@ -84,7 +85,7 @@ export default function Contact() {
   const hobbies = ['Sketching', 'Painting', 'Calligraphy']
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-br from-purple-50 to-primary-50">
+    <section id="contact" className="section-padding bg-gray-900/50 backdrop-blur-custom">
       <div className="container-custom">
         <motion.div
           ref={ref}
@@ -149,7 +150,7 @@ export default function Contact() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={inView ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                      className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm font-medium"
                     >
                       {language}
                     </motion.span>
@@ -166,7 +167,7 @@ export default function Contact() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={inView ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                      className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-primary-600/20 text-primary-300 rounded-full text-sm font-medium"
                     >
                       {hobby}
                     </motion.span>
@@ -219,7 +220,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 bg-white text-black placeholder-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300"
                     placeholder="Your full name"
                   />
                 </div>
@@ -235,7 +236,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 bg-white text-black placeholder-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -251,7 +252,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 bg-white text-black placeholder-gray-600 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-300 resize-none"
                     placeholder="Tell me about your project or how we can work together..."
                   />
                 </div>

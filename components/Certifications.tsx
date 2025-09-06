@@ -161,7 +161,7 @@ export default function Certifications() {
 
         {/* Category */}
         <div className="flex items-center justify-between">
-          <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full font-medium">
+          <span className="px-3 py-1 bg-purple-600/20 text-purple-300 text-sm rounded-full font-medium">
             {item.category}
           </span>
           
@@ -216,7 +216,7 @@ export default function Certifications() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
-                className="bg-gradient-to-r from-purple-50 to-primary-50 rounded-2xl p-8 border-2 border-purple-200"
+                className="bg-gray-800/70 backdrop-blur-custom rounded-2xl p-8 border-2 border-gray-700"
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center`}>

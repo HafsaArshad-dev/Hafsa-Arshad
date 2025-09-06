@@ -117,7 +117,7 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="section-padding bg-gradient-to-br from-purple-50 to-primary-50">
+    <section id="skills" className="section-padding bg-gray-900/50 backdrop-blur-custom">
       <div className="container-custom">
         <motion.div
           ref={ref}
