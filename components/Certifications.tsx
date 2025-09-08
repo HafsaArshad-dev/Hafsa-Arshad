@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import { Award, ExternalLink, Calendar, Building, GraduationCap, Palette, Brain, FileText } from 'lucide-react'
 
 export default function Certifications() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -19,7 +20,7 @@ export default function Certifications() {
       color: 'from-purple-400 to-purple-600',
       category: 'AI & Technology',
       description: 'Advanced techniques in prompt engineering for large language models, focusing on ChatGPT optimization and effective AI communication strategies.',
-      link: 'https://coursera.org/verify/prompt-engineering',
+      link: `${basePath}/images/certifications/Prompt-Certificate.jpg`,
       verified: true
     },
     {
@@ -30,7 +31,7 @@ export default function Certifications() {
       color: 'from-primary-400 to-primary-600',
       category: 'AI & Technology',
       description: 'Comprehensive understanding of Model Context Protocol for building intelligent AI agents and enhancing AI system capabilities.',
-      link: 'https://anthropic.com/certificates/mcp-intro',
+      link: `${basePath}/images/certifications/MCP-certificate.jpg`,
       verified: true
     },
     {
@@ -41,7 +42,7 @@ export default function Certifications() {
       color: 'from-purple-500 to-primary-500',
       category: 'Design & Creativity',
       description: 'Mastery of Canva for creating professional digital products, marketing materials, and visual assets for various applications.',
-      link: 'https://coursera.org/verify/canva-digital-products',
+      link: `${basePath}/images/certifications/create-and-design-using-using-canva.jpg`,
       verified: true
     },
     {
@@ -52,7 +53,7 @@ export default function Certifications() {
       color: 'from-primary-500 to-purple-500',
       category: 'Design & Creativity',
       description: 'Advanced Illustrator techniques including pen tool mastery, layer organization, and structured 2D design workflows.',
-      link: 'https://adobe.com/certificates/illustrator-pen-tool',
+      link: 'https://www.linkedin.com/posts/hafsa-arshad-dev_adobeillustrator-2danimation-vectordesign-activity-7316139416958214144-Bdy_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtvpxQBo7KSvaNtYF_Arg7ASEAroyoYtqk',
       verified: true
     },
     {
@@ -63,7 +64,7 @@ export default function Certifications() {
       color: 'from-purple-400 to-primary-400',
       category: 'Design & Creativity',
       description: 'Expert-level skills in Illustrator pathfinder tools, shape manipulation, and geometric design principles.',
-      link: 'https://adobe.com/certificates/illustrator-pathfinder',
+      link: 'https://www.linkedin.com/posts/hafsa-arshad-dev_adobeillustrator-2danimation-pentool-activity-7317146921876303872-LRu3/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtvpxQBo7KSvaNtYF_Arg7ASEAroyoYtqk',
       verified: true
     },
     {
@@ -74,7 +75,7 @@ export default function Certifications() {
       color: 'from-primary-400 to-purple-400',
       category: 'Content & Communication',
       description: 'Recognition for outstanding contributions to STEM content development and science communication excellence.',
-      link: 'https://aerostudents.org/certificates/content-excellence',
+      link: `${basePath}/images/certifications/content-writing-excellence.jpg`,
       verified: true
     }
   ]

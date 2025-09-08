@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import { ExternalLink, Github, Code, Palette, FileText, Rocket } from 'lucide-react'
 
 export default function Projects() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -66,13 +67,16 @@ export default function Projects() {
       {/* Project Image */}
       <div className="h-48 relative overflow-hidden">
         <img 
-          src={project.image} 
+          src={`${basePath}${project.image}`} 
           alt={project.title}
           className="w-full h-full object-cover"
           onError={(e) => {
             // Fallback to gradient background if image fails to load
             e.currentTarget.style.display = 'none'
-            e.currentTarget.nextElementSibling.style.display = 'flex'
+            const sibling = e.currentTarget.nextElementSibling as HTMLElement | null
+            if (sibling) {
+              sibling.style.display = 'flex'
+            }
           }}
         />
         <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 hidden items-center justify-center`}>
