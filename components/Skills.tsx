@@ -71,20 +71,29 @@ export default function Skills() {
     }
   ]
 
-  const CircularProgress = ({ percentage, size = 120, strokeWidth = 8, color = "from-purple-400 to-primary-400" }: {
+  const CircularProgress = ({ percentage, size = 120, strokeWidth = 8, gradientFrom = '#b8a5ff', gradientTo = '#7cc2ff' }: {
     percentage: number
     size?: number
     strokeWidth?: number
-    color?: string
+    gradientFrom?: string
+    gradientTo?: string
   }) => {
     const radius = (size - strokeWidth) / 2
     const circumference = radius * 2 * Math.PI
     const strokeDasharray = circumference
     const strokeDashoffset = circumference - (percentage / 100) * circumference
 
+    const gradientId = `circle-gradient-${gradientFrom.replace(/[#\s]/g, '')}-${gradientTo.replace(/[#\s]/g, '')}-${size}-${strokeWidth}`
+
     return (
       <div className="relative inline-block">
         <svg width={size} height={size} className="transform -rotate-90">
+          <defs>
+            <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor={gradientFrom} />
+              <stop offset="100%" stopColor={gradientTo} />
+            </linearGradient>
+          </defs>
           <circle
             cx={size / 2}
             cy={size / 2}
@@ -98,10 +107,9 @@ export default function Skills() {
             cx={size / 2}
             cy={size / 2}
             r={radius}
-            stroke="currentColor"
+            stroke={`url(#${gradientId})`}
             strokeWidth={strokeWidth}
             fill="transparent"
-            className={`text-transparent bg-gradient-to-r ${color} bg-clip-text`}
             strokeDasharray={strokeDasharray}
             initial={{ strokeDashoffset: circumference }}
             animate={inView ? { strokeDashoffset } : {}}
@@ -197,21 +205,21 @@ export default function Skills() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Python */}
             <div className="text-center">
-              <CircularProgress percentage={85} color="from-purple-400 to-purple-600" />
+              <CircularProgress percentage={85} gradientFrom="#b8a5ff" gradientTo="#9333ea" />
               <h4 className="text-xl font-semibold text-white mt-4 mb-2">Python</h4>
               <p className="text-white/80">Advanced programming with focus on AI, automation, and problem-solving</p>
             </div>
 
             {/* Generative AI */}
             <div className="text-center">
-              <CircularProgress percentage={95} color="from-primary-400 to-primary-600" />
+              <CircularProgress percentage={95} gradientFrom="#7cc2ff" gradientTo="#3d8bff" />
               <h4 className="text-xl font-semibold text-white mt-4 mb-2">Generative AI</h4>
               <p className="text-white/80">Expert-level knowledge in AI models, agents, and emerging technologies</p>
             </div>
 
             {/* Creative Development */}
             <div className="text-center">
-              <CircularProgress percentage={95} color="from-purple-500 to-primary-500" />
+              <CircularProgress percentage={95} gradientFrom="#a855f7" gradientTo="#5ba6ff" />
               <h4 className="text-xl font-semibold text-white mt-4 mb-2">Creative Development</h4>
               <p className="text-white/80">Mastery in design tools, vector graphics, and creative problem-solving</p>
             </div>

@@ -116,7 +116,7 @@
     @apply border-2 border-purple-500 text-purple-600 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:bg-purple-500 hover:text-white hover:shadow-lg;
     background: linear-gradient(45deg, transparent 30%, rgba(139, 92, 246, 0.1) 50%, transparent 70%);
     background-size: 200% 200%;
-    animation: shimmer 4s ease-in-out infinite;
+    animation: shimmer 2s ease-in-out 1;
   }
   
   /* Skill bars and progress */

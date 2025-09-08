@@ -38,7 +38,7 @@ export default function Projects() {
       icon: FileText,
       color: 'from-purple-500 to-primary-500',
       technologies: ['Technical Writing', 'Science Communication', 'STEM Education', 'Content Development'],
-      link: 'https://aerostudents.org',
+      link: 'https://www.linkedin.com/in/hafsa-arshad-dev/details/projects/',
       image: '/images/projects/stem-articles.jpg',
       featured: true
     },
@@ -148,8 +148,8 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Hover Effect Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-primary-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      {/* Hover Effect Overlay (allow clicks to pass through) */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-primary-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
     </motion.div>
   )
 

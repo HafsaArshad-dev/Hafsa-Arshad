@@ -18,7 +18,7 @@ export default function Blog() {
       category: 'AI & Aerospace',
       icon: Rocket,
       color: 'from-purple-400 to-purple-600',
-      link: 'https://aerostudents.org/neural-flight',
+      link: 'https://www.aerostudent.org/article/neural-flight-how-ai-pilots-are-learning-to-fly-jets-without-eyes',
       readTime: '8 min read',
       date: 'August 2025',
       featured: true
@@ -30,7 +30,7 @@ export default function Blog() {
       category: 'Space Technology',
       icon: Shield,
       color: 'from-primary-400 to-primary-600',
-      link: 'https://aerostudents.org/whipple-shields',
+      link: 'https://www.aerostudent.org/article/how-spacecraft-use-whipple-shields-to-survive-micrometeorites',
       readTime: '6 min read',
       date: 'August 2025'
     },
@@ -41,7 +41,7 @@ export default function Blog() {
       category: 'Propulsion Systems',
       icon: Thermometer,
       color: 'from-purple-500 to-primary-500',
-      link: 'https://aerostudents.org/cryogenic-propulsion',
+      link: 'https://www.aerostudent.org/article/what-makes-a-cryogenic-rocket-engine-work',
       readTime: '7 min read',
       date: 'August 2025'
     },
@@ -52,7 +52,7 @@ export default function Blog() {
       category: 'Materials Science',
       icon: Droplets,
       color: 'from-primary-500 to-purple-500',
-      link: 'https://aerostudents.org/aerogel-versatility',
+      link: 'https://www.aerostudent.org/article/how-aerogel-is-building-the-future-from-mars-to-your-jacket',
       readTime: '9 min read',
       date: 'August 2025'
     }
@@ -119,8 +119,8 @@ export default function Blog() {
         </motion.a>
       </div>
 
-      {/* Hover Effect Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-primary-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      {/* Hover Effect Overlay (allow clicks to pass through) */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-primary-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
     </motion.div>
   )
 
