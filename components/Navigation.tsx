@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Home, User, Wrench, BookOpen, Award, Mail } from 'lucide-react'
 
@@ -41,8 +42,8 @@ export default function Navigation() {
             className="flex items-center space-x-3 cursor-pointer group"
             onClick={() => scrollToSection('#home')}
           >
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-400 to-primary-400 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300">
-              <span className="text-white font-bold text-xl font-heading">HA</span>
+            <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 bg-white/5">
+              <Image src="/logo.png" alt="Hafsa Arshad logo" width={48} height={48} priority className="w-12 h-12 object-contain" />
             </div>
             <span className="text-white font-bold text-xl font-heading hidden sm:block group-hover:text-purple-300 transition-colors duration-300">
               Hafsa Arshad

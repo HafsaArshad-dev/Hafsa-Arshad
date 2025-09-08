@@ -1,0 +1,20 @@
+{
+  "name": "Hafsa Arshad Portfolio",
+  "short_name": "Hafsa",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#b8a5ff",
+  "background_color": "#0b1020",
+  "display": "standalone"
+}
+
