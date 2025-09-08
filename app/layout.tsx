@@ -4,6 +4,8 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export const metadata: Metadata = {
   title: 'Hafsa Arshad - Python Developer & Generative AI Enthusiast',
   description: 'Portfolio of Hafsa Arshad, a passionate Python Developer, Generative AI enthusiast, and Creative Technologist based in Faisalabad, Pakistan.',
@@ -35,14 +37,14 @@ export const metadata: Metadata = {
     description: 'Portfolio of Hafsa Arshad, a passionate Python Developer, Generative AI enthusiast, and Creative Technologist.',
     images: ['/og-image.jpg'],
   },
-  manifest: 'site.webmanifest',
+  manifest: `${basePath}/site.webmanifest`,
   icons: {
     icon: [
-      { url: 'logo.png', sizes: '32x32', type: 'image/png' },
-      { url: 'logo.png', sizes: '192x192', type: 'image/png' },
+      { url: `${basePath}/logo.png`, sizes: '32x32', type: 'image/png' },
+      { url: `${basePath}/logo.png`, sizes: '192x192', type: 'image/png' },
     ],
-    shortcut: 'logo.png',
-    apple: 'logo.png',
+    shortcut: `${basePath}/logo.png`,
+    apple: `${basePath}/logo.png`,
   },
 }
 

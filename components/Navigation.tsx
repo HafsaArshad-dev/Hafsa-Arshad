@@ -43,7 +43,7 @@ export default function Navigation() {
             onClick={() => scrollToSection('#home')}
           >
             <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 bg-white/5">
-              <Image src="/logo.png" alt="Hafsa Arshad logo" width={48} height={48} priority className="w-12 h-12 object-contain" />
+              <Image src="logo.png" alt="Hafsa Arshad logo" width={48} height={48} priority className="w-12 h-12 object-contain" />
             </div>
             <span className="text-white font-bold text-xl font-heading hidden sm:block group-hover:text-purple-300 transition-colors duration-300">
               Hafsa Arshad
