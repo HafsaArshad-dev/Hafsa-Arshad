@@ -184,7 +184,7 @@ export default function Blog() {
             </div>
 
             <motion.a
-              href="https://aerostudents.org"
+              href="https://www.aerostudent.org/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
