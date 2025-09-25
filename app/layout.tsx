@@ -67,6 +67,40 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="canonical" href="https://hafsaarshad.dev" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Hafsa Arshad',
+              url: 'https://hafsaarshad.dev',
+              jobTitle: 'Python Developer',
+              description:
+                'Python Developer & Generative AI Enthusiast based in Faisalabad, Pakistan.',
+              sameAs: [
+                'https://github.com/HafsaArshad-dev',
+                'https://www.linkedin.com/in/hafsaarshad',
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'Hafsa Arshad Portfolio',
+              url: 'https://hafsaarshad.dev',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: 'https://hafsaarshad.dev/?q={search_term_string}',
+                'query-input': 'required name=search_term_string',
+              },
+            }),
+          }}
+        />
       </head>
       <body className={inter.className}>
         {children}
