@@ -172,10 +172,7 @@ export default function Hero() {
           className="mb-8"
         >
           <h1 className="hero-title">
-            <span className="hero-title">HAFSA</span>
-          </h1>
-          <h1 className="hero-title mt-2">
-            <span className="hero-title">ARSHAD</span>
+            Hafsa Arshad
           </h1>
         </motion.div>
         
@@ -185,7 +182,7 @@ export default function Hero() {
           className="mb-12"
         >
           <h2 className="hero-subtitle">
-            Python Developer & Generative AI Enthusiast
+            Data Science & AI Enthusiast • Python Developer
           </h2>
         </motion.div>
         

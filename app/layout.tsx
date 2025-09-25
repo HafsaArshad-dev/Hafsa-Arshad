@@ -8,8 +8,8 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 
 export const metadata: Metadata = {
-  title: 'Hafsa Arshad - Python Developer & Generative AI Enthusiast',
-  description: 'Portfolio of Hafsa Arshad, a passionate Python Developer, Generative AI enthusiast, and Creative Technologist based in Faisalabad, Pakistan.',
+  title: 'Hafsa Arshad | Data Science & AI Enthusiast',
+  description: 'Portfolio of Hafsa Arshad — Data Science student, AI enthusiast, and Python developer. Explore my projects, skills, and experience.',
   keywords: 'Hafsa Arshad, Python Developer, Generative AI, OpenAI, Cloud Computing, Creative Technologist, Portfolio',
   authors: [{ name: 'Hafsa Arshad' }],
   creator: 'Hafsa Arshad',
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://hafsaarshad.dev'),
   verification: googleVerification ? { google: googleVerification } : undefined,
   openGraph: {
-    title: 'Hafsa Arshad - Python Developer & Generative AI Enthusiast',
-    description: 'Portfolio of Hafsa Arshad, a passionate Python Developer, Generative AI enthusiast, and Creative Technologist.',
+    title: 'Hafsa Arshad | Data Science & AI Enthusiast',
+    description: 'Portfolio of Hafsa Arshad — Data Science student, AI enthusiast, and Python developer.',
     url: 'https://hafsaarshad.dev',
     siteName: 'Hafsa Arshad Portfolio',
     images: [
       {
-        url: `${basePath}/logo.png`,
+        url: process.env.NEXT_PUBLIC_OG_IMAGE || `${basePath}/logo.png`,
         width: 1200,
         height: 630,
         alt: 'Hafsa Arshad Portfolio',
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hafsa Arshad - Python Developer & Generative AI Enthusiast',
-    description: 'Portfolio of Hafsa Arshad, a passionate Python Developer, Generative AI enthusiast, and Creative Technologist.',
-    images: [`${basePath}/logo.png`],
+    title: 'Hafsa Arshad | Data Science & AI Enthusiast',
+    description: 'Portfolio of Hafsa Arshad — Data Science student, AI enthusiast, and Python developer.',
+    images: [process.env.NEXT_PUBLIC_OG_IMAGE || `${basePath}/logo.png`],
   },
   manifest: `${basePath}/site.webmanifest`,
   icons: {
@@ -75,9 +75,9 @@ export default function RootLayout({
               '@type': 'Person',
               name: 'Hafsa Arshad',
               url: 'https://hafsaarshad.dev',
-              jobTitle: 'Python Developer',
+              jobTitle: 'Data Science & AI Enthusiast',
               description:
-                'Python Developer & Generative AI Enthusiast based in Faisalabad, Pakistan.',
+                'Portfolio of Hafsa Arshad — Data Science student, AI enthusiast, and Python developer.',
               sameAs: [
                 'https://github.com/HafsaArshad-dev',
                 'https://www.linkedin.com/in/hafsaarshad',
@@ -91,7 +91,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              name: 'Hafsa Arshad Portfolio',
+              name: 'Hafsa Arshad | Data Science & AI Enthusiast',
               url: 'https://hafsaarshad.dev',
               potentialAction: {
                 '@type': 'SearchAction',
