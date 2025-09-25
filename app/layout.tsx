@@ -5,6 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 
 export const metadata: Metadata = {
   title: 'Hafsa Arshad - Python Developer & Generative AI Enthusiast',
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
   publisher: 'Hafsa Arshad',
   robots: 'index, follow',
   metadataBase: new URL('https://hafsaarshad.dev'),
+  verification: googleVerification ? { google: googleVerification } : undefined,
   openGraph: {
     title: 'Hafsa Arshad - Python Developer & Generative AI Enthusiast',
     description: 'Portfolio of Hafsa Arshad, a passionate Python Developer, Generative AI enthusiast, and Creative Technologist.',
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Hafsa Arshad Portfolio',
     images: [
       {
-        url: '/og-image.jpg',
+        url: `${basePath}/logo.png`,
         width: 1200,
         height: 630,
         alt: 'Hafsa Arshad Portfolio',
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Hafsa Arshad - Python Developer & Generative AI Enthusiast',
     description: 'Portfolio of Hafsa Arshad, a passionate Python Developer, Generative AI enthusiast, and Creative Technologist.',
-    images: ['/og-image.jpg'],
+    images: [`${basePath}/logo.png`],
   },
   manifest: `${basePath}/site.webmanifest`,
   icons: {
