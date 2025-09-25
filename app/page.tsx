@@ -1,12 +1,14 @@
+import dynamic from 'next/dynamic'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
-import Blog from '@/components/Blog'
-import Certifications from '@/components/Certifications'
 import Contact from '@/components/Contact'
 import Navigation from '@/components/Navigation'
-import FloatingBackground from '@/components/FloatingBackground'
+
+const FloatingBackground = dynamic(() => import('@/components/FloatingBackground'), { ssr: false })
+const Blog = dynamic(() => import('@/components/Blog'))
+const Certifications = dynamic(() => import('@/components/Certifications'))
 
 export default function Home() {
   return (
