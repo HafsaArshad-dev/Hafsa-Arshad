@@ -3,4 +3,5 @@ Allow: /
 
 Sitemap: https://hafsaarshad.dev/sitemap.xml
 Sitemap: https://hafsaarshad-dev.github.io/Hafsa-Arshad/sitemap.xml
+Sitemap: https://hafsaarshad-dev.github.io/Hafsa-Arshad/sitemap-gh.xml
 
