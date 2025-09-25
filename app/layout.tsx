@@ -8,7 +8,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 
 export const metadata: Metadata = {
-  title: 'Hafsa Arshad | Data Science & AI Enthusiast',
+  title: 'HAFSA ARSHAD | Data Science & AI Enthusiast',
   description: 'Portfolio of Hafsa Arshad — Data Science student, AI enthusiast, and Python developer. Explore my projects, skills, and experience.',
   keywords: 'Hafsa Arshad, Python Developer, Generative AI, OpenAI, Cloud Computing, Creative Technologist, Portfolio',
   authors: [{ name: 'Hafsa Arshad' }],
